@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="./normalize.css" />
+
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <nav>
+            <div class="nav-center"></div>
+        </nav>
+        <main>
+            <div class="taskForm">
+                <div class="form-row">
+                    <label for="task"> Edit Task</label>
+                    <input
+                        type="text"
+                        name="task"
+                        id="task"
+                        autocomplete="false"
+                    />
+                </div>
+                <button
+                    class="block"
+                    id="updateBtn"
+                    onclick="updateTaskFromForm()">
+                    Update
+                </button>
+                <button class="block" id="cancelBtn" onclick="cancel()">
+                    Cancel
+                </button>
+            </div>
+        </main>
+        <script src="./edit.js"></script>
+    </body>
+</html>
